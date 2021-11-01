@@ -1,0 +1,154 @@
+
+.wrapper{
+    color:white;
+    width:100%;
+    margin:30px auto;
+}
+
+.wrapper nav{
+    position:relative;
+    height :40px;
+    width:500px;
+    max-width: 500px;
+    display:flex;
+    margin-left: 260px;
+}
+
+.wrapper nav label{
+    display:block;
+    height:100%;
+    width:100%;
+    text-align:center;
+    line-height:40px;
+    position:relative;
+    font-size:17px;
+    z-index:1;
+    left:0;
+    bottom:0;
+    transition:all 0.3s ease;
+}
+
+#home:checked ~ nav label.home,
+#admin:checked ~ nav label.admin,
+#vtt:checked ~ nav label.vtt{
+    display: block;
+}
+
+input[type="radio"]{
+    display:none;
+}
+
+section .content{
+    display:none;
+}
+
+#home:checked ~ section .content-1{
+    display:block;
+    height: 100%;
+    width: 100%;
+    background:#D9CDB3;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    padding-top: 5px;
+    padding-bottom: 80px;
+}
+
+#home:checked ~ section .content-1 .c1image{
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    border-style:solid;
+    border-width: 10px;
+    background-size:cover;
+    background-position: center;
+   }
+
+#home:checked ~ section .content-1 .c1title1{
+    display:block;
+    text-align: center;
+    padding-bottom: 5px;
+    color:black;
+        }
+
+#home:checked ~ section .content-1 .c1desc{
+    display:block;
+    padding-top: 20px;
+    padding-left: 250px;
+    color:black;
+    }
+
+#admin:checked ~ section .content-2{
+    display:block;
+    height: 100%;
+    width: 100%;
+    background:#D9CDB3;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    padding-top: 5px;
+    padding-bottom: 80px;
+}
+
+#admin:checked ~ section .content-2 .c2image{
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    border-style:solid;
+    border-width: 10px;
+    background-size:cover;
+    background-position: center;
+}
+
+#admin:checked ~ section .content-2 .c2title{
+    display:block;
+    text-align: center;
+    padding-bottom: 5px;
+    color:black;
+}
+
+#admin:checked ~ section .content-2 .c2form {
+    display: block;
+    color: #000;
+    text-align: center;
+}
+
+#admin:checked ~ section .content-2 .c2form .formtitle{
+    display:block;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 20;
+    color:red;
+    }
+
+#admin:checked ~ section .content-2 .c2form .inputfield1{
+    display: block;
+    padding-bottom: 20px;
+}
+
+#admin:checked ~ section .content-2 .c2form .inputfield2{
+    display: block;
+    padding-bottom: 20px;
+}
+
+#vtt:checked ~ section .content-3{
+    display:block;
+}
+
+.wrapper nav .slider{
+    position:absolute;
+    height:100%;
+    width:30%;
+    background:orange;
+    border-radius:10px;
+    z-index:0;
+    left:0;
+    bottom:0;
+    transition:all 0.3s ease;
+}
+
+#admin:checked ~ nav .slider{
+    left:35%;
+}
+#vtt:checked ~ nav .slider{
+    left:68%;
+}
+
